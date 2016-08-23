@@ -131,6 +131,13 @@ header {
           font-size: .9em;
           margin-top: 10px;
           margin-bottom: 0; }
+        #nosotros .other-content .icon-gallery > div > div:hover {
+          background-color: #029CFE;
+          color: #ffffff; }
+          #nosotros .other-content .icon-gallery > div > div:hover h4, #nosotros .other-content .icon-gallery > div > div:hover .fa {
+            color: #ffffff; }
+          #nosotros .other-content .icon-gallery > div > div:hover .icon-block-letrero {
+            background-color: #ffffff; }
       #nosotros .other-content .icon-gallery > div i {
         color: #0C4280; }
     #nosotros .other-content .line-right {
