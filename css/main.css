@@ -15,6 +15,8 @@ body {
 
 header {
   background-color: #011B36; }
+  header .content-login {
+    z-index: 9; }
   header nav {
     margin-top: 80px; }
   header .nav li {
@@ -184,6 +186,15 @@ header {
       margin-bottom: 25px;
       margin-top: 20px; }
 
+/* */
+#clients .clients {
+  margin-top: 50px;
+  margin-bottom: 50px; }
+  #clients .clients > div {
+    margin-bottom: 30px; }
+  #clients .clients h4 {
+    color: #029CFE; }
+
 footer {
   background-color: #252525;
   border-bottom: 25px black solid;
@@ -223,6 +234,11 @@ footer {
 
 .marginb-0 {
   margin-bottom: 0; }
+
+.main-title {
+  color: #029CFE;
+  margin-top: 40px;
+  margin-bottom: 20px; }
 
 @media (max-width: 1200px) {
   header nav {
