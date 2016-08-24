@@ -195,6 +195,42 @@ header {
   #clients .clients h4 {
     color: #029CFE; }
 
+/* */
+#contact .body-contact {
+  margin-top: 30px;
+  margin-bottom: 30px; }
+  #contact .body-contact > div:first-child {
+    padding-right: 0; }
+  #contact .body-contact > div:last-child {
+    padding-left: 0; }
+  #contact .body-contact .content-form-contact {
+    padding: 50px 40px 45px;
+    width: 452px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #ffffff; }
+    #contact .body-contact .content-form-contact > p {
+      margin-bottom: 35px; }
+    #contact .body-contact .content-form-contact .contact-data {
+      font-size: 1em; }
+    #contact .body-contact .content-form-contact form {
+      width: 80%; }
+      #contact .body-contact .content-form-contact form .form-control {
+        background-color: #B1B1B1;
+        border: none; }
+        #contact .body-contact .content-form-contact form .form-control::-webkit-input-placeholder {
+          color: #5D5D5D; }
+        #contact .body-contact .content-form-contact form .form-control:-moz-placeholder {
+          /* Firefox 18- */
+          color: #5D5D5D; }
+        #contact .body-contact .content-form-contact form .form-control::-moz-placeholder {
+          /* Firefox 19+ */
+          color: #5D5D5D; }
+        #contact .body-contact .content-form-contact form .form-control:-ms-input-placeholder {
+          color: #5D5D5D; }
+      #contact .body-contact .content-form-contact form button {
+        padding-bottom: 5px;
+        background-color: #029CFE; }
+
 footer {
   background-color: #252525;
   border-bottom: 25px black solid;
