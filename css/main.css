@@ -158,6 +158,32 @@ header {
     padding: 30px 0 77px 50px;
     background-color: #252525; }
 
+/*  */
+#about-us {
+  color: #454545; }
+  #about-us .first-title {
+    font-size: 1.8em;
+    font-weight: 100 !important; }
+    #about-us .first-title span {
+      display: block;
+      height: 5px;
+      margin: 20px 25%;
+      background-color: #029CFE; }
+  #about-us .text-body {
+    margin: 50px 0 80px; }
+    #about-us .text-body .col-sm-8 {
+      font-size: 1.1em;
+      margin-top: 25px; }
+  #about-us .about-section {
+    width: 70%; }
+    #about-us .about-section i {
+      color: #029CFE; }
+    #about-us .about-section img {
+      margin-top: 13px; }
+    #about-us .about-section h4 {
+      margin-bottom: 25px;
+      margin-top: 20px; }
+
 footer {
   background-color: #252525;
   border-bottom: 25px black solid;
@@ -247,12 +273,14 @@ footer {
     #banner form .form-cotizacion textarea {
       height: 58px; } }
 @media (max-width: 678px) {
+  header img.logo {
+    height: 64px; }
   header .navbar-collapse {
     position: absolute;
     background-color: #011B36;
     left: 0;
     right: 0;
-    top: 108px;
+    top: 85px;
     z-index: 3; }
     header .navbar-collapse .nav-pills > li {
       float: none;
@@ -283,6 +311,9 @@ footer {
     padding-left: 15px; }
   #nosotros .short-footer .content-short-footer {
     padding-right: 20px !important; }
+
+  #about-us .about-section {
+    width: 80%; }
 
   footer .container .row > div {
     margin-bottom: 30px; }
