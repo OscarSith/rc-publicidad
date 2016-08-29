@@ -425,7 +425,7 @@ footer {
     padding: 10px; }
     #banner form .form-cotizacion textarea {
       height: 58px; } }
-@media (max-width: 678px) {
+@media (max-width: 767px) {
   header img.logo {
     height: 64px; }
   header .navbar-collapse {
@@ -467,6 +467,9 @@ footer {
 
   #about-us .about-section {
     width: 80%; }
+
+  #portafolio ul.nav-justified li {
+    border-left: 0 !important; }
 
   footer .container .row > div {
     margin-bottom: 30px; }
