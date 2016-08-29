@@ -22,13 +22,13 @@ header {
   header .nav li {
     font-family: HelveticaLTStd-BoldCond;
     font-size: 1.1em; }
-    header .nav li a:focus, header .nav li a:hover {
+    header .nav li a:focus, header .nav li a:hover, header .nav #portafolio ul.nav-justified li a.product-active, #portafolio ul.nav-justified header .nav li a.product-active {
       background-color: transparent;
       border-bottom: 3px solid #029cfe;
       border-radius: 0; }
   header .nav a {
     color: #ffffff; }
-    header .nav a:hover {
+    header .nav a:hover, header .nav #portafolio ul.nav-justified li a.product-active, #portafolio ul.nav-justified li header .nav a.product-active {
       color: #029CFE; }
   header .header-socials {
     margin-top: 30px; }
@@ -158,7 +158,9 @@ header {
   #nosotros .content-short-footer {
     color: #ffffff;
     padding: 30px 0 77px 50px;
-    background-color: #252525; }
+    background: url("../images/parte-de-contactos.jpg") no-repeat 50% 50%; }
+    #nosotros .content-short-footer h4 {
+      text-transform: uppercase; }
 
 /*  */
 #about-us {
@@ -248,7 +250,7 @@ header {
       display: block;
       color: #ffffff;
       text-decoration: none; }
-      #services .left-content-services li a:hover {
+      #services .left-content-services li a:hover, #services .left-content-services #portafolio ul.nav-justified li a.product-active, #portafolio ul.nav-justified #services .left-content-services li a.product-active {
         background-color: #029CFE; }
     #services .left-content-services li span {
       display: block;
@@ -292,6 +294,42 @@ header {
       border: 3px solid #D1DCE4; }
     #services .right-content-services .txt-body-content {
       margin-top: 40px; }
+
+/* */
+#portafolio {
+  margin-bottom: 60px; }
+  #portafolio .portafolio {
+    margin-top: 40px;
+    margin-bottom: 20px; }
+  #portafolio ul.nav-justified li + li {
+    border-left: 2px solid #5D5D5D; }
+  #portafolio ul.nav-justified li a {
+    color: #5D5D5D;
+    font-size: 1.1em;
+    white-space: nowrap; }
+    #portafolio ul.nav-justified li a:hover, #portafolio ul.nav-justified li a.product-active {
+      background-color: transparent;
+      color: #029CFE; }
+    #portafolio ul.nav-justified li a:focus {
+      background-color: transparent;
+      outline: none; }
+  #portafolio .product {
+    position: relative;
+    margin-top: 30px; }
+    #portafolio .product .product-img {
+      background-repeat: no-repeat;
+      background-position: 50% 50%;
+      height: 350px; }
+    #portafolio .product .product-title {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      color: #ffffff;
+      background-color: #029CFE;
+      padding-top: 10px; }
+      #portafolio .product .product-title h4 {
+        margin-top: 0; }
 
 footer {
   background-color: #252525;
@@ -360,7 +398,8 @@ footer {
     font-size: 3em; }
 
   .content-short-footer {
-    padding: 20px 0 22px 50px !important; } }
+    padding: 20px 0 22px 50px !important;
+    background: url("../images/parte-de-contactos.jpg") no-repeat 50% 50%; } }
 @media (max-width: 992px) {
   header nav {
     margin-top: 25px; }
