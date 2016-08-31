@@ -22,13 +22,13 @@ header {
   header .nav li {
     font-family: HelveticaLTStd-BoldCond;
     font-size: 1.1em; }
-    header .nav li a:focus, header .nav li a:hover, header .nav #portafolio ul.nav-justified li a.product-active, #portafolio ul.nav-justified header .nav li a.product-active {
+    header .nav li a:focus, header .nav li a:hover, header .nav #services .left-content-services li a.service-option, #services .left-content-services header .nav li a.service-option, header .nav #portafolio ul.nav-justified li a.product-active, #portafolio ul.nav-justified header .nav li a.product-active {
       background-color: transparent;
       border-bottom: 3px solid #029cfe;
       border-radius: 0; }
   header .nav a {
     color: #ffffff; }
-    header .nav a:hover, header .nav #portafolio ul.nav-justified li a.product-active, #portafolio ul.nav-justified li header .nav a.product-active {
+    header .nav a:hover, header .nav #services .left-content-services li a.service-option, #services .left-content-services li header .nav a.service-option, header .nav #portafolio ul.nav-justified li a.product-active, #portafolio ul.nav-justified li header .nav a.product-active {
       color: #029CFE; }
   header .header-socials {
     margin-top: 30px; }
@@ -250,7 +250,7 @@ header {
       display: block;
       color: #ffffff;
       text-decoration: none; }
-      #services .left-content-services li a:hover, #services .left-content-services #portafolio ul.nav-justified li a.product-active, #portafolio ul.nav-justified #services .left-content-services li a.product-active {
+      #services .left-content-services li a:hover, #services .left-content-services li a.service-option, #services .left-content-services #portafolio ul.nav-justified li a.product-active, #portafolio ul.nav-justified #services .left-content-services li a.product-active {
         background-color: #029CFE; }
     #services .left-content-services li span {
       display: block;
@@ -307,7 +307,7 @@ header {
     color: #5D5D5D;
     font-size: 1.1em;
     white-space: nowrap; }
-    #portafolio ul.nav-justified li a:hover, #portafolio ul.nav-justified li a.product-active {
+    #portafolio ul.nav-justified li a:hover, #portafolio ul.nav-justified #services .left-content-services li a.service-option, #services .left-content-services #portafolio ul.nav-justified li a.service-option, #portafolio ul.nav-justified li a.product-active {
       background-color: transparent;
       color: #029CFE; }
     #portafolio ul.nav-justified li a:focus {
