@@ -6,7 +6,7 @@
 (function() {
     var $portfolio = $('#portafolio'), $services = $('#services');
     if ($portfolio.length) {
-        $('ul.nav-justified a').first().addClass('product-active');
+        $('ul.nav-justified li').first().addClass('active');
     }
 
     if ($services.length) {
