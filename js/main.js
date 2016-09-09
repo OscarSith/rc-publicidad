@@ -41,4 +41,36 @@
             $this.addClass(classOption);
         }
     }
+
+    // Forms
+    var $formMail = $('#send-form');
+
+    if ($formMail.length) {
+        $formMail.on('submit', sendFormBanner);
+
+
+        function sendFormBanner(e) {
+            e.preventDefault();
+            var $form = $(this),
+                $inputs = $form.find(':input'),
+                data = $form.serialize();
+
+            $inputs.prop('disabled', true);
+            $.ajax({
+                url: 'http://localhost/otros/rc-publicidad/_site/mailer/send.php',
+                type: 'post',
+                dataType: 'json',
+                data: data
+            }).done(function (data) {
+                $('#error').addClass('hidden').empty();
+                $('#success').removeClass('hidden').text(data.success_message);
+            }).fail(function (data, err) {
+                $('#error').removeClass('hidden').text(data.responseJSON.error_message);
+                $('#success').addClass('hidden').empty();
+            }).always(function () {
+                $inputs.prop('disabled', false);
+                $form.trigger('reset');
+            });
+        }
+    }
 })()

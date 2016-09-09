@@ -123,35 +123,51 @@
                     </li>
                     
                 </ul>
-                <form action="#" class="center-block">
+                <form action="#" class="center-block" id="send-form">
+	                <input type="hidden" name="type" value="home">
                     <h3 class="text-center">COTIZACIÓN</h3>
                     <div class="content-controls">
+	                    <div class="form-group">
+		                    <input type="text" class="form-control" placeholder="Nombre y Apellido" name="nombre_apellido" required>
+	                    </div>
+	                    <div class="form-group">
+		                    <input type="email" class="form-control" placeholder="Email" name="correo" required>
+	                    </div>
+	                    <div class="form-group">
+		                    <select name="producto" id="producto" class="form-control" required>
+			                    <option value="0">Producto Específico</option>
+			                    
+			                    <option value="Banderolas">Banderolas</option>
+			                    
+			                    <option value="Vinil">Vinil</option>
+			                    
+			                    <option value="Letreros">Letreros</option>
+			                    
+			                    <option value="Letreros Luminosos">Letreros Luminosos</option>
+			                    
+			                    <option value="Señalización Vial">Señalización Vial</option>
+			                    
+			                    <option value="Imprenta">Imprenta</option>
+			                    
+		                    </select>
+	                    </div>
                         <div class="form-group">
-                            <input type="text" class="form-control" name="nombre" placeholder="Nombre">
+                            <input type="number" name="cantidad" id="cantidad" class="form-control" placeholder="Cantidad">
                         </div>
                         <div class="form-group">
-                            <input type="text" class="form-control" name="apellido" placeholder="Apellido">
+                            <textarea name="mensaje" class="form-control" cols="20" rows="4" placeholder="¿Dejanos un mensaje?"></textarea>
                         </div>
                         <div class="form-group">
-                            <select name="prod_especifico" id="prod_especifico" class="form-control">
-                                <option value="#">PRODUCTO ESPECIFICO</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <select name="cantidad" id="cantidad" class="form-control">
-                                <option value="#">CANTIDAD EXACTA</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <textarea class="form-control" cols="20" rows="4" placeholder="¿Dejanos un mensaje?"></textarea>
-                        </div>
-                        <div>
                             <div class="checkbox pull-left">
                                 <label><input type="checkbox" name="copy"> Send me copy</label>
                             </div>
-                            <button type="button" class="btn btn-primary btn-lg pull-right">enviar</button>
-                            <div class="clearfix"></div>
+                            <button type="submit" class="btn btn-primary btn-lg pull-right">enviar</button>
+	                        <div class="clearfix"></div>
                         </div>
+	                    <div>
+		                    <div class="alert alert-success hidden" id="success"></div>
+		                    <div class="alert alert-danger hidden" id="error"></div>
+	                    </div>
                     </div>
                 </form>
             </div>

@@ -108,16 +108,21 @@
         <i class="fa fa-envelope-o fa-2x fa-fw"></i>rcsialer1@hotmail.com
     </p>
 </address>
-                <form action="#">
+                <form action="#" id="send-form">
+                    <input type="hidden" name="type" value="contact">
                     <div class="form-group">
-                        <textarea name="mensaje" id="mensaje" cols="30" rows="5" class="form-control" placeholder="Déjanos un mensaje"></textarea>
+                        <textarea name="mensaje" id="mensaje" cols="30" rows="5" class="form-control" placeholder="Déjanos un mensaje" required></textarea>
                     </div>
                     <div class="form-group">
-                        <input type="email" class="form-control" placeholder="Tu correo">
+                        <input type="email" name="correo" class="form-control" placeholder="Tu correo" required>
                     </div>
                     <div class="form-group">
-                        <button class="btn btn-primary btn-lg" type="button">Enviar</button>
+                        <button class="btn btn-primary btn-lg" type="submit">Enviar</button>
                     </div>
+	                <div>
+		                <div class="alert alert-success hidden" id="success"></div>
+		                <div class="alert alert-danger hidden" id="error"></div>
+	                </div>
                 </form>
             </div>
         </div>
